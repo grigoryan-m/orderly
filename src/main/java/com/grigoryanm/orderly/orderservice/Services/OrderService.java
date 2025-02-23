@@ -29,12 +29,13 @@ public class OrderService {
     public void deleteOrderById(UUID id){
         orderRepository.deleteById(id);
     }
-    public Order updateOrderStatusById(UUID id, String status){
-        Order orderToEdit = orderRepository.findById(id).orElse(null);
-        if(orderToEdit != null) {
-            orderToEdit.setStatus(status);
-            return orderToEdit;
-        }
-        return null;
+    public String updateOrderStatusById(UUID id, String status){
+        return orderRepository.findById(id)
+                .map(order -> {
+                    order.setStatus(status);
+                    orderRepository.save(order);
+                    return order.getStatus();
+                })
+                .orElse("Order not found");
     }
 }
