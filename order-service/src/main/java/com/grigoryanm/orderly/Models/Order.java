@@ -1,4 +1,4 @@
-package com.grigoryanm.orderly.orderservice.Models;
+package com.grigoryanm.orderly.Models;
 
 import jakarta.persistence.*;
 import lombok.Data;

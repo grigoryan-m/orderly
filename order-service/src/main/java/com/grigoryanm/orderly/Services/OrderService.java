@@ -1,12 +1,11 @@
-package com.grigoryanm.orderly.orderservice.Services;
+package com.grigoryanm.orderly.Services;
 
-import com.grigoryanm.orderly.orderservice.Models.Order;
-import com.grigoryanm.orderly.orderservice.Repositories.OrderRepository;
+import com.grigoryanm.orderly.Models.Order;
+import com.grigoryanm.orderly.Repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Service
