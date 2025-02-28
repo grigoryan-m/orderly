@@ -1,4 +1,4 @@
-package com.grigoryanm.orderly.Controllers;
+package com.grigoryanm.orderly.controllers;
 
 import com.grigoryanm.orderly.Models.Order;
 import com.grigoryanm.orderly.Services.OrderService;
