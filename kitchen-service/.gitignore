@@ -19,6 +19,8 @@ target/
 *.ipr
 
 *.properties
+kitchen-service/src/main/resources/application.properties
+**/src/main/resources/application.properties
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
